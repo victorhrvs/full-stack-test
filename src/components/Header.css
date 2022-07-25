@@ -1,0 +1,49 @@
+.App-logo {
+    pointer-events: none;
+  }
+  
+  .App-header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 89vw;
+    height: 50px;
+    
+  
+    margin-top: 54px;
+  
+  }
+  
+  .App-link {
+    color: #4AC959;
+  }
+  
+  button {
+    background-color: #4AC959;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background: #000000;
+    width: 120px;
+    height: 40px;
+    padding-top: 3px;
+  
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  button:hover {
+    background: #4AC959;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .App-header {
+        height: 40px;
+    }
+  }
