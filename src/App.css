@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,500,600|Poppins:600');
 
-
+.App {
+  scroll-behavior: smooth;
+}
 .scroll-container,
 .scroll-area {
   max-width: 100%;
-  height: 100vh;
+  height: 734px;
+  
+  
   
 }
 .scroll-container {
-  overflow: auto;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  
 }
 .scroll-area {
   scroll-snap-align: start;
+  margin-bottom: 70px;
+
+}
+#area1 {
+  margin-top: 24px;
 }
 /*
 background-image: url('./assets/BG.png');
@@ -21,7 +33,7 @@ background-image: url('./assets/BG.png');
 h1 strong {
 
   /* Organize */
-
+  
   height: 131px;
   left: 5.56%;
   right: 51.46%;
@@ -37,7 +49,7 @@ h1 strong {
 }
 
 h1 {
-  position: absolute;
+  
   height: 131px;
   width: 500px;
   margin: 0;
@@ -50,6 +62,21 @@ h1 {
   /* or 107% */
   color: #4AC959;
   line-height: 70px;
+}
+
+div p {
+
+  margin-top: 64px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px; 
+  width: 500px;
+}
+.Content {
+  width: 100%;
+
 }
 
 section {
@@ -77,9 +104,16 @@ section {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 10vw;
+  
   margin-top: 104px;
+}
 
+.GoToListContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 600px;
 }
 
 #foto {
@@ -97,6 +131,23 @@ section {
 
   right: 0px;
   top: 30px;
+}
+
+#GoToList {
+
+  width: 300px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: #4AC959;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1140px) {
@@ -126,7 +177,23 @@ section {
   .ColumnLeft {
     
     margin-top: 104px;
-    max-width: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .GoToListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+  }
+  .Columns {
+    
+    width: 100%;
+  }
+  div p {
+    width: 100%;
     text-align: center;
   }
   .ColumnRight {
@@ -149,6 +216,82 @@ section {
     font-size: 40px;
     line-height: 64px;
   }
+  .GoToListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+  }
+  .Columns {
+    width: 100%;
+  }
+  div p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+h2{
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 0px 0px  0px 0px;
+  
+}
+
+#BG2 {
+
+  /* identical to box height, or 100% */
+  color: #FFFFFF;
+  background: #000000;
+  position: absolute;
+  z-index: -4;
+  top: -41.9px;
+  left: -20px;
+  right: -40px;
+  bottom: -20px;
+  width: 103%;
+  height: 322px;
+  transform: rotate(-4deg);
+
+  
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#BG2Limit {
+  display: block;
+  width: 20%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  padding-top: 64px;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+#line1 {
+  background-color: #4AC959;
+  width: 297px;
+  height: 4px;
+  margin: 0px 105px 23px 105px;
+  z-index: 3;
+  
 
 }
 
+#subtitle {
+  color: #FFFFFF;
+}
