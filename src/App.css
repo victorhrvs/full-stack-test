@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,500,600|Poppins:600');
 
-.App {
-  scroll-behavior: smooth;
-}
+
 .scroll-container,
 .scroll-area {
-  max-width: 100%;
-  height: 734px;
+  max-width: inherit;
+  
   
   
   
@@ -19,12 +17,13 @@
   
 }
 .scroll-area {
-  scroll-snap-align: start;
-  margin-bottom: 70px;
+  scroll-snap-align: center;
+  
 
 }
 #area1 {
   margin-top: 24px;
+  height: 800px;
 }
 /*
 background-image: url('./assets/BG.png');
@@ -85,7 +84,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  
   scroll-snap-align: start;
 }
 .Columns {
@@ -233,6 +232,8 @@ section {
   }
 }
 
+/*ToDo*/
+
 h2{
   text-align: center;
   font-family: 'Poppins';
@@ -275,6 +276,14 @@ h2{
   justify-content: center;
 }
 
+
+#ToDoScreen {
+  scroll-margin-block-start: -40px;
+  scroll-margin-block-end: 200px;
+  max-height: inherit;
+  margin-bottom: 68px;
+  background-color: #33333333;
+}
 #title {
   padding-top: 64px;
   width: 500px;
@@ -288,10 +297,115 @@ h2{
   height: 4px;
   margin: 0px 105px 23px 105px;
   z-index: 3;
-  
-
 }
 
 #subtitle {
   color: #FFFFFF;
 }
+
+.ToDos {
+  margin: 158px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  /*title*/
+  height: inherit;
+  max-height: inherit;
+  
+  width: 802px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.ToDoLeft {
+  display: table;
+  width: 382.85px;
+  height: 20px;
+  background-color: #E88D39;
+}
+
+.ToDoLeft div {
+  margin-top: 20px;
+  height: inherit;
+  background-color: rgb(255, 217, 136);
+}
+
+.ToDoRight {
+  display: table;
+  height: 20px;
+  width: 382.85px;
+  background-color: #4AC959;
+}
+.ToDoRight div {
+  margin-top: 20px;
+  height: 800px;
+  background-color: #b1ffbe;
+}
+/*
+#leftBG {
+  display: absolute;
+  align-self: start;
+  z-index: -3;
+}*/
+
+@media screen and (max-width: 830px) {
+  .ToDos {
+    display: flex;
+    flex-direction: column;
+    
+    width: 382.85px;
+  }
+
+}
+
+
+/*Carousel*/
+
+#carousel {
+  background-color: #333;
+  height: 672px;
+  margin-bottom: 79px;
+}
+
+/*GetInTouch*/
+
+#GetInTouch {
+  background-color: aquamarine;
+  height: 820px;
+  margin-bottom: 38px;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  height: 210px;
+  background-color: #000000;;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+
+}
+
+#lineBG {
+
+  width: 100%;
+  height: 36px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
+  margin: 0px;
+  background-color: #000000;
+  box-shadow: 10px 5px black;
+  transform: scale3d(1.001, 1, 1);
+ 
+}
+
+footer h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+
+  margin-top: 0;
+  padding-top: 36px;
+}
+
