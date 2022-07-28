@@ -5,9 +5,6 @@
 .scroll-area {
   max-width: inherit;
   
-  
-  
-  
 }
 .scroll-container {
   height: 100vh;
@@ -282,7 +279,10 @@ h2{
   scroll-margin-block-end: 200px;
   max-height: inherit;
   margin-bottom: 68px;
-  background-color: #33333333;
+  background-image: url('./assets/leftBG.png');
+  background-repeat: no-repeat;
+  background-position: left ;
+  
 }
 #title {
   padding-top: 64px;
@@ -321,12 +321,63 @@ h2{
   width: 382.85px;
   height: 20px;
   background-color: #E88D39;
+  box-shadow: 0px 4px 12px rgba(0.258, 0.258, 0.258, 0.094);
+  margin-bottom: 20px;
 }
 
 .ToDoLeft div {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
+  height: auto;
+  background-color: #FFFFFF;
+  width: 382.85px;
+  align-items: center;
+  align-content: center;
+}
+
+#ToDoContent {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  color:#000000;
   height: inherit;
-  background-color: rgb(255, 217, 136);
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+#ToDoContent img {
+  margin-right: 17px;
+  margin-left: 30px;
+}
+
+#ToDoContent p{
+  margin: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+}
+#ToDoContent a {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+  color: #FFFFFF;
+  margin-right: 38px;
+}
+#ToDoContent a:hover{
+  color: #999999;
+}
+
+.space {
+  padding-bottom: 36px;
 }
 
 .ToDoRight {
@@ -334,18 +385,69 @@ h2{
   height: 20px;
   width: 382.85px;
   background-color: #4AC959;
+  box-shadow: 0px 4px 12px rgba(0.258, 0.258, 0.258, 0.094);
+  margin-bottom: 200px;
 }
 .ToDoRight div {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
-  height: 800px;
-  background-color: #b1ffbe;
+  height: auto;
+  background-color: #FFFFFF;
+  width: 382.85px;
+  align-items: center;
+  
 }
-/*
-#leftBG {
-  display: absolute;
-  align-self: start;
-  z-index: -3;
-}*/
+
+.ToDoRight div h3, .ToDoLeft div h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.ToDoRight div h4, .ToDoLeft div h4 {
+  margin: 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  align-items: center;
+  color: #000;
+}
+
+.ToDoRight div h4 strong {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.ToDos button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  width: 302px;
+  height: 64px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  margin-top: 28px;
+  color: #FFFFFF;
+}
+
 
 @media screen and (max-width: 830px) {
   .ToDos {
@@ -353,6 +455,7 @@ h2{
     flex-direction: column;
     
     width: 382.85px;
+    
   }
 
 }
@@ -361,17 +464,105 @@ h2{
 /*Carousel*/
 
 #carousel {
-  background-color: #333;
+  display: block;
+  background-color: #535353;
   height: 672px;
   margin-bottom: 79px;
+  clip-path: inset(0 0px 0px 140px round 10px);
+
 }
+
+#carousel h2 {
+  text-align: left;
+  margin-left: 140px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-bottom: 48px;
+
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+}
+
 
 /*GetInTouch*/
 
 #GetInTouch {
-  background-color: aquamarine;
+  
+  background-color: FFFFFF;
   height: 820px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 38px;
+}
+#GetInTouch img{
+  z-index: 2;
+}
+
+#side{
+  width: 166px;
+  height: 23px;
+  background-color: #46BD62;
+  z-index: 0;
+  left: -84px;
+  top: -103px;
+  position: relative;
+}
+
+.GetInTouch{
+  background-color: #FFFFFF;
+  height: 721px;
+  width: 700px;
+  position: relative;
+  top: -104px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.GetInTouch h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  
+  /* Cor 06 */
+  
+  color: #06152B;
+  margin:0;
+}
+
+.GetInTouch h3 strong {
+  font-weight: 700;
+  
+}
+
+.iconGetIn {
+  display: flex;
+  margin-top: 87px;
+  margin-bottom: 45px;
+  
+}
+
+#titleGetIn {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.GetInTouch img {
+  margin-right: 24px;
+  height: 60px;
+
 }
 
 /*footer*/
@@ -384,6 +575,9 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+
 
 }
 
@@ -405,7 +599,28 @@ footer h3 {
   font-weight: 600;
   font-size: 24px;
 
-  margin-top: 0;
+  margin: 0;
   padding-top: 36px;
 }
 
+footer h5 {
+  margin: 0;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 31px;
+}
+
+#end {
+  display: flex;
+  flex-direction: row;
+  clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #4AC959;
+  height: 41px;
+  width: 511px;
+  margin: 0px;
+  padding: 0px;
+}
