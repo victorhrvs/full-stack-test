@@ -21,7 +21,9 @@ function App() {
                 <div className="Content">
                   <p>The only way to get things done</p>
                 </div>
-                <button id="GoToList">Go to To-do list</button>
+                <a href="#ToDoScreen">
+                  <button id="GoToList">Go to To-do list</button>
+                </a>
               </div>
             </div>
 
@@ -45,22 +47,21 @@ function App() {
             </h3>
           </div>
 
-          
           <div className="ToDos">
             <div className="ToDoLeft">
               <div>
                 <h3>To-do</h3>
                 <h4>Take a breath.</h4>
                 <h4>Start doing.</h4>
-                <div className="space"/>
+                <div className="space" />
 
                 <div id="ToDoContent">
-                  <img src={vector}  alt=""/>
+                  <img src={vector} alt="" />
                   <p>ToDoContent</p>
                   <a>delete</a>
                 </div>
 
-              <button>erase all</button>
+                <button>erase all</button>
               </div>
             </div>
 
@@ -71,14 +72,14 @@ function App() {
                 <h4>
                   <strong>You have done 5 tasks</strong>
                 </h4>
-                <div className="space"/>
+                <div className="space" />
                 <div id="ToDoContent">
-                  <img src={vector}  alt=""/>
+                  <img src={vector} alt="" />
                   <p>ToDoContent</p>
                   <a>delete</a>
                 </div>
                 <div id="ToDoContent">
-                  <img src={vector}  alt=""/>
+                  <img src={vector} alt="" />
                   <p>ToDoContent</p>
                   <a>delete</a>
                 </div>
@@ -90,35 +91,53 @@ function App() {
 
         <section className="scroll-area" id="carousel">
           <h2>good things</h2>
-          <div className="Carousel">
-            
-          </div>
+          <div className="Carousel"></div>
         </section>
 
         <section className="scroll-area" id="GetInTouch">
-          <img src={image}  alt=""/>
-          <div id="side"/>
+          <img src={image} alt="" />
+          <div id="side" />
           <div className="GetInTouch">
             <div className="iconGetIn">
-              <img src={iconmail}  alt=""/>
+              <img src={iconmail} alt="" />
               <div id="titleGetIn">
                 <h3>GET IN </h3>
-                <h3><strong>TOUCH</strong></h3>
+                <h3>
+                  <strong>TOUCH</strong>
+                </h3>
               </div>
+              <div></div>
             </div>
             <div>
-              oioioi
+              
+              <form action="/pagina-processa-dados-do-form" method="post">
+                <h6>Your Name</h6>
+                <input type="text" name="nome" placeholder="type your name here..." />
+                <div>
+                  <div className="email">
+                    <h6>Email*</h6>
+                    <input type="text" name="email" placeholder="example@example.com" />
+                  </div>
+                  <div>
+                  <h6>Telephone*</h6>
+                  <input type="text" name="telephone" placeholder="(  ) ____-____"/>
+                  </div>
+                  </div>
+                <h6>Message*</h6>
+                <input type="text" name="message" id="message" placeholder="Type what you want to say to us" />
+                <button id="sendMsg" type="submit">SEND NOW</button>
+                
+              </form>
             </div>
-
           </div>
         </section>
 
-        <div id="lineBG"></div>
+        <div id="lineBG"/>
         <footer className="scroll-area">
           <h3>Need help?</h3>
           <h4>coopers@coopers.pro</h4>
           <h5>© 2021 Coopers. All rights reserved.</h5>
-          <div id="end"/>
+          <div id="end" />
         </footer>
       </div>
     </div>
