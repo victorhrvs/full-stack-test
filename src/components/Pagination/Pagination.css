@@ -1,0 +1,7 @@
+#pagination {
+    display: flex;
+    justify-content: space-between;
+    height: 29px;
+    width: 127px;
+    
+}
