@@ -10,7 +10,7 @@ import Carousel from "./components/Carousel/Carousel.js"
 
 const defaultData = [
   {title: 'Grupo 1', items: [{text:'this is a new task', checked: false} , {text:'Develop the To-do list page', checked: true}]},
-  {title: 'Grupo 2', items: [{text:'1', checked: false} , {text:'2', checked: true}]}
+  {title: 'Grupo 2', items: [{text:'Home Page Design', checked: false} , {text:'Get FTP credentials', checked: true}]}
 ]
 
 function App() {

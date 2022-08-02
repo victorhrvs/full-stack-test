@@ -1,16 +1,27 @@
 /*ToDo*/
 
 h2{
-    text-align: center;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 60px;
+  margin: 0px;
+  color: #FFFFFF;
+
+}
+
+#ToDoTitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  
+
+    /* identical to box height, or 100% */
+    
+    
     color: #FFFFFF;
-    margin: 0px 0px  0px 0px;
+
     
   }
+
   
   #BG2 {
   
@@ -18,7 +29,7 @@ h2{
     color: #FFFFFF;
     background: #000000;
     position: absolute;
-    z-index: -4;
+
     top: -41.9px;
     left: -20px;
     right: -40px;
@@ -32,6 +43,7 @@ h2{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -1;
   }
   
   #BG2Limit {
@@ -56,22 +68,34 @@ h2{
     
   }
   #title {
-    padding-top: 64px;
-    width: 500px;
+    padding-top: 30px;
+    width: 600px;
     align-items: center;
     text-align: center;
+
+
+    
   }
   
   #line1 {
     background-color: #4AC959;
     width: 297px;
     height: 4px;
-    margin: 0px 105px 23px 105px;
-    z-index: 3;
+    margin-top: 24px;
+    margin-left: 156px;
+    
+
   }
   
   #subtitle {
     color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    width: 600px;
   }
   
   .ToDos {
@@ -85,6 +109,7 @@ h2{
     width: 802px;
     max-width: 100%;
     background-color: rgba(0, 0, 0, 0);
+
   }
   
   .ToDoLeft {
@@ -209,6 +234,7 @@ h2{
 
   .eraseBnt {
     background-color: #000000;
+    border: 0px;
   }
   
   

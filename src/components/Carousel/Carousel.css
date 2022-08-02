@@ -5,6 +5,7 @@
     margin-bottom: 0px;
     scroll-snap-align: start;
     
+    
   }
   
   #carousel h2 {
@@ -72,6 +73,7 @@
   }
   #carousel {
     width: 100%;
+    transform: scale(0.5);
   }
   #carousel h2 {
     text-align: center;

@@ -6,7 +6,7 @@
   
 }
   #GetInTouch img{
-    z-index: 2;
+
   }
   
   .GetInTouchDiv {
@@ -26,7 +26,6 @@
     height: 23px;
     padding-top: 23px;
     background-color: #46BD62;
-    z-index: 0;
     left: -84px;
     top: -104px;
     

@@ -96,7 +96,7 @@ function ToDo({ data }) {
           <div id="BG2Limit">
             <div id="BG2"></div>
           </div>
-          <h2>To-do List</h2>
+          <h2 id="ToDoTitle">To-do List</h2>
           <div id="line1"></div>
           <h3 id="subtitle">
             Drag and drop to set your main priorities, check when done and

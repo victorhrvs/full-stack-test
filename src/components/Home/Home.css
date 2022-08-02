@@ -94,15 +94,17 @@
   
   #foto {
     display: absolute;
-    z-index: 1;
+
     margin-top: 52px;
     right: 5vw;
     top: 95px;
+    z-index: 1;
+
   }
   
   .ColumnRight img{
     display: absolute;
-    z-index: -3;
+
     position: absolute;
   
     right: 0px;
