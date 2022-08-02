@@ -6,7 +6,7 @@ function Header() {
     <header className="App-header">
         <img src={logo} className="App-logo" alt="Logo da Coopers" />
         <nav>
-        <button>entrar</button>
+        <button className="loggin">entrar</button>
         </nav>
     </header>
   );

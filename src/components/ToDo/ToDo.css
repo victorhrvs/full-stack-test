@@ -46,11 +46,13 @@ h2{
   #ToDoScreen {
     scroll-margin-block-start: -40px;
     scroll-margin-block-end: 200px;
+    min-height: 1060px;
     max-height: inherit;
     margin-bottom: 68px;
     background-image: url('../../assets/leftBG.png');
     background-repeat: no-repeat;
     background-position: left ;
+    background-position-y: 300px;
     
   }
   #title {
@@ -100,7 +102,7 @@ h2{
     margin-top: 20px;
     height: auto;
     background-color: #FFFFFF;
-    width: 382.85px;
+    
     align-items: center;
     align-content: center;
   }
@@ -131,19 +133,7 @@ h2{
     line-height: 16px;
     text-align: left;
   }
-  #ToDoContent a {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    /* identical to box height, or 200% */
-    color: #FFFFFF;
-    margin-right: 38px;
-  }
-  #ToDoContent a:hover{
-    color: #999999;
-  }
+
   
   .space {
     padding-bottom: 36px;
@@ -163,7 +153,7 @@ h2{
     margin-top: 20px;
     height: auto;
     background-color: #FFFFFF;
-    width: 382.85px;
+
     align-items: center;
     
   }
@@ -215,6 +205,10 @@ h2{
     margin-bottom: 40px;
     margin-top: 28px;
     color: #FFFFFF;
+  }
+
+  .eraseBnt {
+    background-color: #000000;
   }
   
   

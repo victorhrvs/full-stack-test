@@ -11,7 +11,7 @@ function Carousel() {
     <section className="scroll-area" id="carousel">
       
       <div id="BGCarousel"><h2>good things</h2></div>
-      <div id="BGCarousel2">
+      <div id="BGCarouselbase">
         <div id="BGCarousel3">
             <Card image={img1} description="Organize your daily job enhance your life performance" />
             <Card image={img2} description="Mark one activity as done makes your brain understands the power of doing."/>

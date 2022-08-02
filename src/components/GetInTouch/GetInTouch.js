@@ -33,6 +33,8 @@ function GetInTouch() {
                   type="text"
                   name="email"
                   placeholder="example@example.com"
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                  required
                 />
               </div>
               <div>
@@ -41,15 +43,17 @@ function GetInTouch() {
                   type="text"
                   name="telephone"
                   placeholder="(  ) ____-____"
+                  required
                 />
               </div>
             </div>
             <h6>Message*</h6>
-            <input
+            <textarea
               type="text"
               name="message"
               id="message"
               placeholder="Type what you want to say to us"
+              required
             />
             <button id="sendMsg" type="submit">
               SEND NOW

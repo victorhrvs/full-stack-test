@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "full-stack-test-victorhrvs",
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

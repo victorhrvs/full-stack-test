@@ -1,4 +1,4 @@
-
+import { useEffect, useState  } from "react";
 import "./App.css";
 import "./assets/fonts.css"
 
@@ -8,14 +8,32 @@ import ToDo from "./components/ToDo/ToDo.js";
 import GetInTouch from "./components/GetInTouch/GetInTouch.js";
 import Carousel from "./components/Carousel/Carousel.js"
 
+const defaultData = [
+  {title: 'Grupo 1', items: [{text:'this is a new task', checked: false} , {text:'Develop the To-do list page', checked: true}]},
+  {title: 'Grupo 2', items: [{text:'1', checked: false} , {text:'2', checked: true}]}
+]
 
 function App() {
+  const [data, setData] = useState();  
+
+  useEffect(() => {
+    /*{
+    if (localStorage.getItem('List')) {
+      console.log(localStorage.getItem('List'))
+      setData(JSON.parse(localStorage.getItem('List')))
+    } else {
+      setData(defaultData)
+    } }*/
+    setData(defaultData)
+  }, [setData])
+  
+
   return (
     <div className="App">
       <div className="scroll-container">
         <Home/>
 
-        <ToDo/>
+        <ToDo data={data}/>
 
         <Carousel/>
 

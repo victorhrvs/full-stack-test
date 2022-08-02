@@ -2,7 +2,7 @@ import "./Dot.css";
 
 function Dot() {
     return (
-        <div id="dot">
+        <div className="dot">
 
         </div>
     );
