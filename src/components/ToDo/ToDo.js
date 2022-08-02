@@ -82,6 +82,18 @@ function ToDo({ data }) {
       })
   }
 
+  //Adicionar item
+  const addItem = (e) => {
+
+      e.preventDefault();
+      const newList = JSON.parse(JSON.stringify(list))
+      newList[0].items.push({text: "", checked: false})
+      localStorage.setItem('List', JSON.stringify(newList));
+      setList(newList);
+
+      
+    }
+
   const getStyles = (item) => {
       if (dragItem.current.grpI === item.grpI && dragItem.current.itemI === item.itemI) {
           return "dnd-item current"
@@ -106,7 +118,7 @@ function ToDo({ data }) {
 
         <div className="ToDos">
           <div className="ToDoLeft">
-            <div>
+            <div className="ToDoLeftContent">
               <h3>To-do</h3>
               <h4>Take a breath.</h4>
               <h4>Start doing.</h4>
@@ -154,7 +166,7 @@ function ToDo({ data }) {
                       <label for={ "0" + i }/>
                       {<input
                         type="text"
-                        id="task"
+                        id={"task0"+ i}
                         multiline = {list[0].items[i].text}
                         defaultValue={a.text}
                         value={list[0].items[i].text}
@@ -164,17 +176,20 @@ function ToDo({ data }) {
 
                       {console.log(a.text)}
 
-                      <a
-                        id="delete"
+                      <button
+                        id={"delete0" + i}
                         
                         onClick={(e) => {
                           handleRemove(e, { grpI: 0, itemI: i });
                         }}
                       >
                         delete
-                      </a>
+                      </button>
                     </div>
                   ))}
+                              <form>
+                  <button id="add" onClick={ (e) => addItem(e)}>+</button>
+                  </form>
                 </div>
               </div>
 
@@ -193,7 +208,7 @@ function ToDo({ data }) {
           </div>
 
           <div className="ToDoRight">
-            <div>
+            <div className="ToDoRightContent">
               <h3>Done</h3>
               <h4>Congratulions!</h4>
               <h4>
@@ -244,7 +259,7 @@ function ToDo({ data }) {
                       <label for={ "1" + i }/>
                       {<input
                         type="text"
-                        id="task"
+                        id={"task1" + i}
                         multiline = {list[1].items[i].text}
                         defaultValue={a.text}
                         value={list[1].items[i].text}
@@ -254,15 +269,15 @@ function ToDo({ data }) {
 
                       {console.log(a.text)}
 
-                      <a
-                        id="delete"
+                      <button
+                        id={"delete1" + i}
                         
                         onClick={(e) => {
                           handleRemove(e, { grpI: 1, itemI: i });
                         }}
                       >
                         delete
-                      </a>
+                      </button>
                     </div>
                   ))}
                 </div>

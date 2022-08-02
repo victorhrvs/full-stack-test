@@ -22,6 +22,7 @@ function GetInTouch() {
           <form action="/pagina-processa-dados-do-form" method="post">
             <h6>Your Name</h6>
             <input
+              id="inputName"
               type="text"
               name="nome"
               placeholder="type your name here..."
@@ -30,6 +31,7 @@ function GetInTouch() {
               <div className="email">
                 <h6>Email*</h6>
                 <input
+                  id="inputEmail"
                   type="text"
                   name="email"
                   placeholder="example@example.com"
@@ -40,6 +42,7 @@ function GetInTouch() {
               <div>
                 <h6>Telephone*</h6>
                 <input
+                  id="inputTel"
                   type="text"
                   name="telephone"
                   placeholder="(  ) ____-____"

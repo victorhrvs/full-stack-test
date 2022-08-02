@@ -4,18 +4,18 @@ import func from "../../assets/tag.png";
 import read from "../../assets/read.png";
 function Card( {description, image} ) {
     return (
-        <div id="card">
-            <div id="cardImage">
+        <div className="card">
+            <div className="cardImage">
                 <img src={image} alt="" />
             </div>
-            <div id="foregroundPosition">
+            <div className="foregroundPosition">
                 <img id="foreground" src={foreground} alt="" />
             </div>
             
-            <img id="function" src={func} alt=""/>
+            <img className="function" src={func} alt=""/>
 
-            <h3 id="description">{description}</h3>
-            <img id="read" src={read} alt=""/>
+            <h3 className="description">{description}</h3>
+            <img class="read" src={read} alt=""/>
 
 
         </div>

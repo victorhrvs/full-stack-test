@@ -76,7 +76,7 @@ body.active-modal {
     display: flex;
     justify-content: flex-end;
 }
-#close-modal {
+#closeModalBnt {
     background: none;
     font-family: 'Montserrat';
     font-style: normal;
@@ -205,3 +205,20 @@ form.login {
     width: inherit;
 
   }
+
+  @media screen and (max-width: 830px) {
+    .modal {
+     transform: scale(0.75);
+    }
+    .overlay {
+     transform: scale(1.5);
+    }
+
+    .modal-content {
+        background-image: none;
+        padding: 10px;
+        padding-left: 20px;
+        min-height: 720px;
+    }
+
+}

@@ -5,7 +5,8 @@
     width: inherit;
   
 }
-  #GetInTouch img{
+  #GetInTouch img{ 
+    z-index: 1;
 
   }
   
@@ -111,7 +112,7 @@
     margin-right: 24px;
   }
   
-  input, #message {
+  [id^=input], #message {
     width: calc(100% - 22px);
     height: 50px;
   

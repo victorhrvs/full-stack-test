@@ -5,22 +5,24 @@
     height: 100%;
     grid-template-columns: repeat(auto-fill, 300px);
     align-items: start;
+    
   }
   .dnd-group {
     min-height: 60px;
-    background-color: #49505e;
+    background-color: #ffffff;
     border-radius: 5px;
     padding: .5rem;
   }
   .dnd-item {
     display: none;
-
-
-
-
+    background-color: #e2e2e2;
     
   }
-  #dnd-item {
+  .dnd-item {
+    display: flex;
+    flex-direction: row;
+    
+
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -29,16 +31,20 @@
     min-height: 50px;
     min-width: 330px;
     align-items: left;
-    background-color: #FFFFFF00;
+    background-color: #cfcfcf00;
     border-radius: 5px;
     color: #282c34;
+    
   }
 
   .dnd-item:not(:last-of-type) {
-    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+   
   }
   .dnd-item * {  
     margin: 0;
+    
 
   }
   .group-title {
@@ -47,16 +53,20 @@
     font-size: 1.5rem;
   }
   .current {
-    display: none;
-    flex-direction: row;
-    background-color: #282c34;
+
+    background-color: #dddddd;
+    align-items: center;
     
   }
   
-#delete {
-    height: 24px;
+[id^='delete'] {
+    height: 36px;
     width: 64px;
+    margin: 0;
 
+    background: none;
+    border: 0;
+    cursor: pointer;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -67,7 +77,9 @@
     background-color: #FFFFFF00;
     color: #FFFFFF00;
   }
-#delete:hover{
+
+  
+  [id^='delete']:hover{
     background-color: #ffffff00;
     color: #999999;
   }
@@ -76,15 +88,20 @@
     display: none;
   }
 
-#task  {
+[id^=task]  {
     height: 32px;
     width: 220px;
     border: #FFFFFF00 solid 0px;
     background-color: #FFFFFF00;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 
 }
 
-#task:focus { 
+[id^=task]:focus { 
     outline: none !important;
     border-color: #00000000;
     color: #E38D3F;
@@ -105,4 +122,5 @@ label::before {
 
 label {
     margin: 22px;
+    height: 24px;
   }

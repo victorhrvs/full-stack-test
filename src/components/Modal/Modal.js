@@ -77,7 +77,7 @@ export default function Modal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <div className="close-modal-position">
-              <button id="close-modal" onClick={toggleModal}>
+              <button id="closeModalBnt" onClick={toggleModal}>
                 close
               </button>
             </div>
@@ -91,6 +91,7 @@ export default function Modal() {
                 placeholder="Username"
                 className="loginInput"
                 autoComplete="username"
+                id="inputLogin"
                 onChange={(e) => onChangeEmail(e.target.value)}
                 value={email}
               />
@@ -99,7 +100,7 @@ export default function Modal() {
                 type="password"
                 placeholder="Password"
                 autoComplete="current-password"
-                className="loginInput"
+                id="inputPassword"
                 onChange={(e) => onChangePass(e.target.value)}
                 value={pass}
 
