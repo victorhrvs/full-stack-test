@@ -1,6 +1,11 @@
 #area1 {
     margin-top: 24px;
     height: 800px;
+    background-image: url('../../assets/arrow.png');
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-position-y: 91%;
+
   }
   /*
   background-image: url('./assets/BG.png');
@@ -130,6 +135,9 @@
   }
   
   @media screen and (max-width: 1140px) {
+    #area1 {
+      background-image: none;
+    }
     h1 strong {
       display: flex;
       flex-direction: column;

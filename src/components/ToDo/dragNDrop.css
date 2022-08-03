@@ -123,4 +123,5 @@ label::before {
 label {
     margin: 22px;
     height: 24px;
+    padding-left: 24px;
   }

@@ -158,17 +158,17 @@ function ToDo({ data }) {
                         type="checkbox"
                         className="checkbox"
                         id={ "0" + i }
-                        defaultChecked={a.checked}
+                        
                         value={list[0].items[i].checked}
                         onChange={(e) => handleCheck(e, { grpI: 0, itemI: i })}
                         checked={list[0].items[i].checked ? "checked" : ""}
                       />
-                      <label for={ "0" + i }/>
+                      <label id={ "0" + i }/>
                       {<input
                         type="text"
                         id={"task0"+ i}
                         multiline = {list[0].items[i].text}
-                        defaultValue={a.text}
+                        
                         value={list[0].items[i].text}
                         onChange={(e) => handleEdit(e, { grpI: 0, itemI: i })}
                       />}
@@ -251,17 +251,17 @@ function ToDo({ data }) {
                         type="checkbox"
                         className="checkboxDone"
                         id={ "1" + i }
-                        defaultChecked="true"
+                        
                         value={true}
                         onChange={(e) => handleCheck(e, { grpI: 1, itemI: i })}
                         checked
                       />
-                      <label for={ "1" + i }/>
+                      <label id={ "1" + i }/>
                       {<input
                         type="text"
                         id={"task1" + i}
                         multiline = {list[1].items[i].text}
-                        defaultValue={a.text}
+                        
                         value={list[1].items[i].text}
                         onChange={(e) => handleEdit(e, { grpI: 1, itemI: i })}
                       />}

@@ -15,7 +15,7 @@ function Card( {description, image} ) {
             <img className="function" src={func} alt=""/>
 
             <h3 className="description">{description}</h3>
-            <img class="read" src={read} alt=""/>
+            <img className="read" src={read} alt=""/>
 
 
         </div>
