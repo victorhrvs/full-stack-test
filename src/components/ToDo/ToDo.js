@@ -163,7 +163,7 @@ function ToDo({ data }) {
                         onChange={(e) => handleCheck(e, { grpI: 0, itemI: i })}
                         checked={list[0].items[i].checked ? "checked" : ""}
                       />
-                      <label id={ "0" + i }/>
+                      <label htmlFor={ "0" + i }/>
                       {<input
                         type="text"
                         id={"task0"+ i}
@@ -288,6 +288,7 @@ function ToDo({ data }) {
 
 
               <button
+              id="eraseBntRight"
               className="eraseBnt"
               onClick={(e) => {
                 e.preventDefault()

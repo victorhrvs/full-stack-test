@@ -84,7 +84,7 @@ export default function Modal() {
 
             <h2 className="loginTitle">Sign in</h2>
             <h3 className="loginSubtitle">to access your list</h3>
-            <form className="login" >
+            <form className="login">
               <label className="loginLabel">Email</label>
               <input
                 type="text"

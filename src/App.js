@@ -17,14 +17,14 @@ function App() {
   const [data, setData] = useState();  
 
   useEffect(() => {
-    /*{
+    
     if (localStorage.getItem('List')) {
-      console.log(localStorage.getItem('List'))
+      //console.log(localStorage.getItem('List'))
       setData(JSON.parse(localStorage.getItem('List')))
     } else {
       setData(defaultData)
-    } }*/
-    setData(defaultData)
+    }
+    //setData(defaultData)
   }, [setData])
   
 
